@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студия</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-------------------------------------------- Шапка проекта -------------------------------------------->
+    <header class="header">
+      <div class="container header__container">
+        <a class="link logo header__logo" href="#" lang="en">
+          <span class="accent-color">Web</span>Studio</a
+        >
+        <!--------------------------------------- Планшет + Декстоп --------------------------------------->
+        <nav class="site-nav">
+          <ul class="list site-list">
+            <li class="site-list__item">
+              <a class="link site-list__link" href="index.html">Студия</a>
+            </li>
+            <li class="site-list__item">
+              <a class="link site-list__link current-link" href="portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-list__item">
+              <a class="link site-list__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list cntc-list">
+          <li class="cntc-list__item">
+            <a
+              class="link mail-link cntc-list__link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="cntc-list__icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="cntc-list__item">
+            <a class="link cntc-list__link" href="tel:+380961111111">
+              <svg class="cntc-list__icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <!-------------------------------------------- Моб-меню -------------------------------------------->
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="menu-icon" width="40" , height="40">
+            <use
+              href="./images/sprite.svg#icon-burger-menu"
+              class="menu-icon__burger"
+            ></use>
+          </svg>
+        </button>
+        <div class="mobile-menu is-hidden" data-menu>
+          <div class="container container-menu">
+            <div class="mobile-menu--top">
+              <button type="button" class="menu-close" data-menu-close>
+                <svg class="menu-icon" width="40" , height="40">
+                  <use
+                    href="./images/sprite.svg#icon-cross"
+                    class="menu-icon__cross"
+                  ></use>
+                </svg>
+              </button>
+              <ul class="list menu-list">
+                <li class="menu-list__item">
+                  <a class="link menu-list__link" href="index.html">Студия</a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="link menu-list__link" href="portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="menu-list__item">
+                  <a class="link menu-list__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-menu--bottom">
+              <ul class="list menu-cntc-list">
+                <li class="menu-cntc-list__item">
+                  <a
+                    class="link tel-link menu-cntc-list__link"
+                    href="tel:+380961111111"
+                  >
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu-cntc-list__item">
+                  <a
+                    class="link menu-cntc-list__link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="list socials-list">
+                <li class="socials-list__item">
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link socials-list__link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="socials-list__item">
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link socials-list__link"
+                  >
+                    Twitter</a
+                  >
+                </li>
+                <li class="socials-list__item">
+                  <a
+                    href="https://uk-ua.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link socials-list__link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="socials-list__item">
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link socials-list__link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- -------------------------------------Список портфолио--------------------------------------->
+      <section class="section">
+        <!---------------------------------------Список кнопок--------------------------------------->
+        <h1 hidden>Портфолио</h1>
+        <div class="container">
+          <ul class="list btns-list">
+            <li class="btns-list__item">
+              <button type="button" class="all-btn">Все</button>
+            </li>
+            <li class="btns-list__item">
+              <button type="button" class="ws-btn">Веб-сайты</button>
+            </li>
+            <li class="btns-list__item">
+              <button type="button" class="app-btn">Приложения</button>
+            </li>
+            <li class="btns-list__item">
+              <button type="button" class="design-btn">Дизайн</button>
+            </li>
+            <li class="btns-list__item">
+              <button type="button" class="marketing-btn">Маркетинг</button>
+            </li>
+          </ul>
+          <!--------------------------------------------Список услуг-------------------------------------------->
+          <ul class="list service-list">
+            <li class="service-list__item">
+              <a class="link service-list__link" href="#">
+                <div class="service-wrap">
+                  <p class="service-wrap__text">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/tecno.jpg         1x,
+                        ./images/tecno-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tecno-tab-1x.jpg 1x,
+                        ./images/tecno-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tecno-mob-1x.jpg 1x,
+                        ./images/tecno-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/tecno.jpg" alt="технокряк" />
+                  </picture>
+                </div>
+                <div class="service-box service-box--special">
+                  <h2 class="service-box__title">Технокряк</h2>
+                  <p class="service-box__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-list__item">
+              <a class="link service-list__link" href="#">
+                <div class="service-wrap">
+                  <p class="service-wrap__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloremque velit itaque earum quos odit commodi ad,
+                    dignissimos esse rerum voluptas.
+                  </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/basketball.jpg        1x,
+                        ./images/basketall-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/basketall-tab-1x.jpg 1x,
+                        ./images/basketall-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/basketball-mob-1x.jpg 1x,
+                        ./images/basketball-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/basketball.jpg" alt="постер" />
+                  </picture>
+                </div>
+                <div class="service-box">
+                  <h2 class="service-box__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="service-box__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-list__item">
+              <a class="link service-list__link" href="#">
+                <div class="service-wrap">
+                  <p class="service-wrap__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloremque velit itaque earum quos odit commodi ad,
+                    dignissimos esse rerum voluptas.
+                  </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/seafood.jpg         1x,
+                        ./images/seafood-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/seafood-tab-1x.jpg 1x,
+                        ./images/seafood-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/seafood-mob-1x.jpg 1x,
+                        ./images/seafood-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/seafood.jpg" alt="ресторан" />
+                  </picture>
+                </div>
+                <div class="service-box">
+                  <h2 class="service-box__title">Ресторан Seafood</h2>
+                  <p class="service-box__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-list__item">
+              <a class="link service-list__link" href="#">
+                <div class="service-wrap">
+                  <p class="service-wrap__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloremque velit itaque earum quos odit commodi ad,
+                    dignissimos esse rerum voluptas.
+                  </p>
+                  <img src="./images/prime.jpg" alt="проект" />
+                </div>
+                <div class="service-box">
+                  <h2 class="service-box__title">Проект Prime</h2>
+                  <p class="service-box__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-list__item">
+              <a class="link service-list__link" href="#">
+                <div class="service-wrap">
+                  <p class="service-wrap__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloremque velit itaque earum quos odit commodi ad,
+                    dignissimos esse rerum voluptas.
+                  </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/boxes.jpg         1x,
+                        ./images/boxes-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-tab-1x.jpg 1x,
+                        ./images/boxes-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-mob-1x.jpg 1x,
+                        ./images/boxes-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/boxes.jpg" alt="ящики" />
+                  </picture>
+                </div>
+                <div class="service-box">
+                  <h2 class="service-box__title">Проект Boxes</h2>
+                  <p class="service-box__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-list__item">
+              <a class="link service-list__link" href="#">
+                <div class="service-wrap">
+                  <p class="service-wrap__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloremque velit itaque earum quos odit commodi ad,
+                    dignissimos esse rerum voluptas.
+                  </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/no-borders.jpg         1x,
+                        ./images/no-borders-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/no-borders-tab-1x.jpg 1x,
+                        ./images/no-borders-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/no-borders-mob-1x.jpg 1x,
+                        ./images/no-borders-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/no-borders.jpg" alt="сайт" />
+                  </picture>
+                </div>
+                <div class="service-box">
+                  <h2 class="service-box__title">Inspiration has no Borders</h2>
+                  <p class="service-box__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-list__item">
+              <a class="link service-list__link" href="#">
+                <div class="service-wrap">
+                  <p class="service-wrap__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloremque velit itaque earum quos odit commodi ad,
+                    dignissimos esse rerum voluptas.
+                  </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/limited-ed.jpg         1x,
+                        ./images/limited-ed-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/limited-ed-tab-1x.jpg 1x,
+                        ./images/limited-ed-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/limited-ed-mob-1x.jpg 1x,
+                        ./images/limited-ed-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/limited-ed.jpg" alt="издание" />
+                  </picture>
+                </div>
+                <div class="service-box">
+                  <h2 class="service-box__title">Издание Limited Edition</h2>
+                  <p class="service-box__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-list__item">
+              <a class="link service-list__link" href="#">
+                <div class="service-wrap">
+                  <p class="service-wrap__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloremque velit itaque earum quos odit commodi ad,
+                    dignissimos esse rerum voluptas.
+                  </p>
+                  <picture>
+                    <source
+                      srcset="./images/lab.jpg 1x, ./images/lab-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/lab-tab-1x.jpg 1x,
+                        ./images/lab-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/lab-mob-1x.jpg 1x,
+                        ./images/lab-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/lab.jpg" alt="лаборатория" />
+                  </picture>
+                </div>
+                <div class="service-box">
+                  <h2 class="service-box__title">Проект LAB</h2>
+                  <p class="service-box__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-list__item">
+              <a class="link service-list__link" href="#">
+                <div class="service-wrap">
+                  <p class="service-wrap__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloremque velit itaque earum quos odit commodi ad,
+                    dignissimos esse rerum voluptas.
+                  </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/bussines.jpg         1x,
+                        ./images/bussines-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/bussines-tab-1x.jpg 1x,
+                        ./images/bussines-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/bussines-mob-1x.jpg 1x,
+                        ./images/bussines-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/bussines.jpg" alt="бизнес" />
+                  </picture>
+                </div>
+                <div class="service-box">
+                  <h2 class="service-box__title">Growing Business</h2>
+                  <p class="service-box__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--------------------------------------------Подвал-------------------------------------------->
+    <footer class="footer">
+      <div class="container">
+        <div class="address-box">
+          <a class="link logo footer-logo" href="#" lang="en">
+            <span class="accent-color">Web</span>Studio</a
+          >
+          <address class="address">
+            <ul class="list address-list">
+              <li class="address-list__item">
+                <a
+                  class="link address-list__link"
+                  href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-list__item">
+                <a class="link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-list__item">
+                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="sn-box">
+          <h2 class="sn-box__title">Присоединяйтесь</h2>
+          <ul class="list sn-list">
+            <li class="sn-list__item">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sn-list__link"
+              >
+                <svg class="sn-list__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sn-list__item">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sn-list__link"
+              >
+                <svg class="sn-list__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sn-list__item">
+              <a
+                href="https://uk-ua.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sn-list__link"
+              >
+                <svg class="sn-list__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sn-list__item">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sn-list__link"
+              >
+                <svg class="sn-list__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sign-box">
+          <h2 class="sign-box__title">Подпишитесь на рассылку</h2>
+          <form action="#">
+            <div class="sign-wrap">
+              <input
+                type="email"
+                name="email"
+                class="sign-wrap__email"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="main-btn sign-btn">
+                Подписаться
+                <svg class="sign-btn__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
