@@ -1,0 +1,28 @@
+.logo {
+  font-family: 'Raleway', sans-serif;
+  @include font(bold, 24px, 1.16, null, null);
+
+  @include desk {
+    @include font(bold, 26px, 1.19, null, null);
+  }
+}
+
+.header__logo {
+  color: var(--primary-text-color);
+
+  @include tab {
+    margin-right: 88px;
+  }
+
+  @include desk {
+    margin-right: 93px;
+  }
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.footer-logo {
+  color: var(--primary-color);
+}

@@ -1,0 +1,45 @@
+.clients-list {
+  margin-bottom: -30px;
+
+  @include mob {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @include desk {
+    flex-wrap: nowrap;
+  }
+}
+
+.clients-list__item {
+  @include flex();
+  margin-bottom: 30px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4%;
+  fill: #afb1b8;
+  background-color: var(--primary-color);
+  transition: fill var(--primary-transition);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+
+  @include mob {
+    width: calc(100% / 2 - 15px);
+  }
+
+  @include tab {
+    width: calc(100% / 3 - 15px);
+  }
+
+  @include desk {
+    width: 170px;
+  }
+}
+
+.clients-list__icon {
+  fill: inherit;
+}

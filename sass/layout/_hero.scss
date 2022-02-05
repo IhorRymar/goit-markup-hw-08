@@ -1,0 +1,92 @@
+.hero {
+  background-color: var(--secondary-color);
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @include desk {
+    // @include flex();
+    // flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.hero-bg {
+  display: block;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bgi-mob-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 1600px;
+  max-height: 600px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bgi-mob-2x.jpg);
+  }
+
+  @include tab {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bgi-tab-1x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bgi-tab-2x.jpg);
+    }
+  }
+
+  @include desk {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bgi.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bgi-desk-2x.jpg);
+    }
+  }
+}
+
+.hero__title {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @include font(900, 26px, 1.6, 0.06em, center);
+  }
+
+  @include desk {
+    @include font(900, 44px, 1.4, 0.06em, center);
+  }
+}

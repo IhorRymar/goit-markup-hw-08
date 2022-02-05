@@ -1,0 +1,42 @@
+.specifics-list {
+  margin-bottom: -30px;
+
+  @include tab {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @include desk {
+    flex-wrap: nowrap;
+  }
+}
+
+.specifics-list__item {
+  margin-bottom: 30px;
+
+  @include tab {
+    width: calc(100% / 2 - 15px);
+  }
+
+  @include desk {
+    width: calc(100% / 4 - 15px);
+  }
+}
+
+.specifics-list__title {
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.specifics-list__text {
+  line-height: 1.7;
+  color: var(--secondary-text-color);
+  margin-top: 10px;
+}

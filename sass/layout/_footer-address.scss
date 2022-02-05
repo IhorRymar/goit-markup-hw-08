@@ -1,0 +1,35 @@
+.address-box {
+  text-align: center;
+
+  @include tab {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 61px;
+  }
+
+  @include desk {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+.address-list {
+  margin-top: 20px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.address-list__item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.address-list__item > .link {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-list__item > .address-list__link {
+  color: var(--primary-color);
+}

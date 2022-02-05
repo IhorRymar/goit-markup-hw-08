@@ -1,0 +1,13 @@
+.menu-list__item:not(:last-child) {
+  padding-bottom: 32px;
+}
+
+.menu-list__link {
+  @include font(500, 40px, 1.175, 0.02em, null);
+  color: var(--primary-text-color);
+  transition: color var(--primary-transition);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

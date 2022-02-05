@@ -1,0 +1,56 @@
+.sn-box {
+  margin-top: 60px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @include tab {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 165px;
+  }
+
+  @include desk {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
+}
+
+.sn-box__title,
+.sign-box__title {
+  @include font(bold, 14px, 1.14, 0.03em, null);
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.sn-list {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sn-list__item + .sn-list__item {
+  margin-left: 10px;
+}
+
+.sn-list__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--primary-color);
+  background-color: #43444d;
+  @include flex();
+  transition: background-color var(--primary-transition);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-color);
+  }
+}
+
+.sn-list__icon {
+  fill: inherit;
+}

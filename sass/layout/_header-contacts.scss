@@ -1,0 +1,55 @@
+.cntc-list {
+  display: none;
+
+  @include tab {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: flex-start;
+  }
+
+  @include desk {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: auto;
+    justify-content: center;
+  }
+}
+
+.cntc-list__link {
+  @include font(500, 12px, 1.16, 0.02em, null);
+  padding: 10px 0 10px 0;
+  max-height: 16px;
+  color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
+  @include flex();
+  transition: color var(--primary-transition);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+
+  @include desk {
+    @include font(500, null, 1.14, 0.02em, null);
+    max-width: 161px;
+  }
+}
+
+.mail-link {
+  margin-right: 0;
+
+  @include desk {
+    margin-right: 50px;
+  }
+}
+
+.cntc-list__icon {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+
+.cntc-list__icon {
+  fill: inherit;
+}

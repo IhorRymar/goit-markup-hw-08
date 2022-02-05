@@ -1,0 +1,13 @@
+.menu-cntc-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-cntc-list__link {
+  @include font(500, 24px, 1.16, 0.02em, null);
+  color: var(--secondary-text-color);
+}
+
+.tel-link {
+  @include font(500, 34px, 1.17, 0.02em, null);
+  color: var(--accent-color);
+}

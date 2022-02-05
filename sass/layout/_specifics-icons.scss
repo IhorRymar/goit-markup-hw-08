@@ -1,0 +1,22 @@
+.specifics-icon {
+  content: '';
+  width: 450px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  @include flex();
+  margin-bottom: 30px;
+
+  @include tab {
+    width: 354px;
+  }
+
+  @include desk {
+    width: 270px;
+  }
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}
