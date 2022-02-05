@@ -310,7 +310,30 @@
                     Doloremque velit itaque earum quos odit commodi ad,
                     dignissimos esse rerum voluptas.
                   </p>
-                  <img src="./images/prime.jpg" alt="проект" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/prime.jpg         1x,
+                        ./images/prime-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime-tab-1x.jpg 1x,
+                        ./images/prime-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime-mob-1x.jpg 1x,
+                        ./images/prime-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/prime.jpg" alt="проект" />
+                  </picture>
                 </div>
                 <div class="service-box">
                   <h2 class="service-box__title">Проект Prime</h2>
