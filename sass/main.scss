@@ -1,0 +1,32 @@
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './base/_container';
+@import './base/_reset';
+
+@import './components/btns';
+@import './components/portfolio_btns';
+@import './components/modal';
+@import './components/modal-form';
+@import './components/section';
+@import './components/header-modal-menu';
+
+@import './layout/_header';
+@import './layout/_header-contacts';
+@import './layout/specifics';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/portfolio-service';
+@import './layout/footer';
+@import './layout/footer-address';
+@import './layout/footer-sn-list';
+@import './layout/footer-sign';
+@import './layout/hero';
+@import './layout/images';
+@import './layout/specifics-icons';
+@import './layout/sl-link-icons';
+@import './layout/header-tab-desk-nav';
+@import './layout/header-mob-menu-nav';
+@import './layout/header-mob-menu-cntc';
+@import './layout/header-mob-menu-socials';
+@import './layout/logo';
