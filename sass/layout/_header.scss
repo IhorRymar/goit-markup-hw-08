@@ -9,6 +9,10 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
+  @media screen and (max-width: 786px) {
+    width: 100%;
+  }
+
   @include tab {
     padding-top: 21px;
     padding-bottom: 21px;

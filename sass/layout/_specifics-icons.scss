@@ -1,11 +1,15 @@
 .specifics-icon {
-  content: '';
-  width: 450px;
+  content: "";
+  min-width: 290px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
   @include flex();
   margin-bottom: 30px;
+
+  @include mob {
+    width: 450px;
+  }
 
   @include tab {
     width: 354px;

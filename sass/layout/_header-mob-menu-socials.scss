@@ -4,8 +4,12 @@
 }
 
 .socials-list__link {
-  @include font(500, 18px, 1.22, 0.02em, center);
+  @include font(500, 14px, 1.22, 0.02em, center);
   color: var(--accent-color);
+
+  @include mob {
+    @include font(500, 18px, 1.22, 0.02em, center);
+  }
 }
 
 .socials-list__item:not(:last-child) {

@@ -1,6 +1,10 @@
 .modal__title {
   margin-bottom: 12px;
-  @include font(bold, 20px, 1.5, 0.03em, center);
+  @include font(bold, 18px, 1.5, 0.03em, center);
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @include font(bold, 20px, 1.5, 0.03em, center);
+  }
 
   @include desk {
     @include font(bold, 20px, 1.15, 0.03em, center);
@@ -42,8 +46,11 @@
 }
 
 .input-box__size {
-  height: 40px;
+  height: 34px;
   padding-left: 42px;
+  @include mob {
+    height: 40px;
+  }
 }
 
 .input-box__icon {
@@ -71,9 +78,11 @@
 }
 
 .checkbox {
+  @include font(null, 11px, 1.03, 0.03em, null);
   margin-top: 20px;
   color: var(--secondary-text-color);
   @include flex;
+  flex-wrap: wrap;
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     @include font(null, 12px, 1.16, 0.03em, null);
@@ -94,12 +103,18 @@
 }
 
 .check__box {
-  width: 16px;
-  height: 15px;
+  width: 13px;
+  height: 12px;
   border: 2px solid var(--primary-text-color);
   border-radius: 4px;
-  margin-right: 8.38px;
+  margin-right: 4px;
   @include flex;
+
+  @include mob {
+    width: 16px;
+    height: 15px;
+    margin-right: 8.38px;
+  }
 }
 
 .check-box__icon {
