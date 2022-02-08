@@ -1122,7 +1122,6 @@ img {
 .sign-wrap__email {
   width: 290px;
   height: 50px;
-  margin-bottom: 20px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1134,6 +1133,7 @@ img {
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .sign-wrap__email {
     width: 450px;
+    margin-bottom: 20px;
   }
 }
 
